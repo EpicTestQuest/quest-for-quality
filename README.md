@@ -62,6 +62,13 @@ All while having a bit of fun along the way.
 
 ---
 
+## 📚 Documentation
+
+- **[INVENTORY.md](INVENTORY.md)** - Complete list of all 25 Issues and 31 PRs
+- **[BETA_TESTING_SETUP_DOCUMENTATION.md](BETA_TESTING_SETUP_DOCUMENTATION.md)** - Full setup guide with decisions, techniques, and replication steps
+
+---
+
 **Ready to begin your quest?** Head to the [Issues](https://github.com/EpicTestQuest/quest-for-quality/issues) or [Pull Requests](https://github.com/EpicTestQuest/quest-for-quality/pulls) to start testing!
 
 _May your bugs be few and your test coverage high._ 🚀
