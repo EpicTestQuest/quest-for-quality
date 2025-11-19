@@ -1,0 +1,1 @@
+## Fix: Instant Booking Date Calculation\n\n### Changed Files:\n- src/email/templates/bookingConfirmation.js\n- src/utils/dateHelper.js\n\n### Changes:\nFixed timezone handling in booking confirmation emails
