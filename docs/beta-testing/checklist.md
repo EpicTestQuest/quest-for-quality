@@ -233,22 +233,10 @@ Expected: Error message displayed, user remains on login page
 ---
 
 ## Part 6: Focus Break
-
-### Play 2048
 - [ ] Go to Home Tab → 🧠 Focus Break tab
-- [ ] Click on **2048** game
-- [ ] Play for 1-2 minutes
+- [ ] Play for 1-2 minutes any of the games
 - [ ] Verify the game works smoothly
 - [ ] Note your experience (relaxing? distracting? helpful?)
-
----
-
-### Play Wordle
-- [ ] Go to Home Tab → 🧠 Focus Break tab
-- [ ] Click on **Wordle** game
-- [ ] Play one round
-- [ ] Verify the game works correctly
-- [ ] Note your experience
 
 ---
 
