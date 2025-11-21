@@ -20,24 +20,22 @@ screenshots/
 ## Screenshot Inventory
 
 ### 🚗 Uber
-- `uber-ride-booking.png` - Ride booking flow page
-- `uber-safety-features.png` - Driver safety features page
+- `uber-signup.png` - User registration/signup page
+- `uber-help-errors.png` - Payment error help page
 
 ### 🏠 Airbnb
-- `airbnb-search-results.png` - Search results with filters
-- `airbnb-instant-book.png` - Instant booking information
+- `airbnb-login.png` - Login page with email/phone input
+- `airbnb-signup.png` - Registration/signup page
+- `airbnb-help-errors.png` - Booking error help page
 
 ### 📦 Amazon
-- `amazon-product-search.png` - Product search results for "laptop"
-- `amazon-product-reviews.png` - Product page with reviews and ratings
+- `amazon-signin.png` - Sign-in page with email/password
+- `amazon-register.png` - Create account registration page
+- `amazon-help-errors.png` - Payment declined error help page
+- `amazon-cart-error.png` - Shopping cart errors help page
 
 ### 💳 Stripe
-- `stripe-payment-form.png` - Payment form documentation
-- `stripe-dashboard.png` - Dashboard overview
-
-### 🏦 Chase
-- `chase-mobile-banking.png` - Mobile banking features
-- `chase-zelle.png` - Zelle transfer page
+- `stripe-login.png` - Dashboard login page
 
 ## Related GitHub Issues/PRs
 

@@ -15,76 +15,124 @@ const { chromium } = require('playwright');
 const fs = require('fs').promises;
 const path = require('path');
 
-// Screenshot configuration based on GitHub issues/PRs
+// Screenshot configuration - Focus on login, registration, and error states
 const screenshots = [
-  // Uber Screenshots
+  // Uber Screenshots - Login/Registration/Errors
   {
-    name: 'uber-ride-booking',
-    url: 'https://www.uber.com/us/en/ride/',
+    name: 'uber-login',
+    url: 'https://auth.uber.com/v2/?breeze_local_zone=dca26',
     folder: 'uber',
-    description: 'Uber ride booking flow page'
+    description: 'Uber login page'
   },
   {
-    name: 'uber-safety-features',
-    url: 'https://www.uber.com/us/en/about/safety/',
+    name: 'uber-signup',
+    url: 'https://www.uber.com/signup',
     folder: 'uber',
-    description: 'Uber driver safety features page'
+    description: 'Uber signup/registration page'
+  },
+  {
+    name: 'uber-help-errors',
+    url: 'https://help.uber.com/riders/article/i-was-charged-an-incorrect-amount?nodeId=9e657cf7-a35e-449b-9e49-4b222d5aa172',
+    folder: 'uber',
+    description: 'Uber error help page - payment issues'
   },
 
-  // Airbnb Screenshots
+  // Airbnb Screenshots - Login/Registration/Errors
   {
-    name: 'airbnb-search-results',
-    url: 'https://www.airbnb.com/s/New-York--NY/homes',
+    name: 'airbnb-login',
+    url: 'https://www.airbnb.com/login',
     folder: 'airbnb',
-    description: 'Airbnb search results with filters'
+    description: 'Airbnb login page'
   },
   {
-    name: 'airbnb-instant-book',
-    url: 'https://www.airbnb.com/help/article/3179',
+    name: 'airbnb-signup',
+    url: 'https://www.airbnb.com/signup',
     folder: 'airbnb',
-    description: 'Airbnb instant booking information'
+    description: 'Airbnb signup/registration page'
+  },
+  {
+    name: 'airbnb-help-errors',
+    url: 'https://www.airbnb.com/help/article/1318',
+    folder: 'airbnb',
+    description: 'Airbnb error help - booking issues'
   },
 
-  // Amazon Screenshots
+  // Amazon Screenshots - Login/Registration/Errors
   {
-    name: 'amazon-product-search',
-    url: 'https://www.amazon.com/s?k=laptop',
+    name: 'amazon-signin',
+    url: 'https://www.amazon.com/ap/signin',
     folder: 'amazon',
-    description: 'Amazon product search results'
+    description: 'Amazon sign-in page'
   },
   {
-    name: 'amazon-product-reviews',
-    url: 'https://www.amazon.com/Amazon-Kindle-Paperwhite/dp/B08KTZ8249',
+    name: 'amazon-register',
+    url: 'https://www.amazon.com/ap/register',
     folder: 'amazon',
-    description: 'Amazon product page with reviews'
+    description: 'Amazon create account page'
+  },
+  {
+    name: 'amazon-help-errors',
+    url: 'https://www.amazon.com/gp/help/customer/display.html?nodeId=GYF8VYURLVS3SWPJ',
+    folder: 'amazon',
+    description: 'Amazon error help - payment declined'
+  },
+  {
+    name: 'amazon-cart-error',
+    url: 'https://www.amazon.com/gp/help/customer/display.html?nodeId=G3W8E5GYQSVMSCMV',
+    folder: 'amazon',
+    description: 'Amazon shopping cart errors help page'
   },
 
-  // Stripe Screenshots
+  // Stripe Screenshots - Integration/Registration/Errors
   {
-    name: 'stripe-payment-form',
-    url: 'https://stripe.com/docs/payments/accept-a-payment',
+    name: 'stripe-signup',
+    url: 'https://dashboard.stripe.com/register',
     folder: 'stripe',
-    description: 'Stripe payment form documentation'
+    description: 'Stripe signup/registration page'
   },
   {
-    name: 'stripe-dashboard',
-    url: 'https://stripe.com/docs/dashboard',
+    name: 'stripe-login',
+    url: 'https://dashboard.stripe.com/login',
     folder: 'stripe',
-    description: 'Stripe dashboard overview'
+    description: 'Stripe login page'
+  },
+  {
+    name: 'stripe-error-codes',
+    url: 'https://stripe.com/docs/error-codes',
+    folder: 'stripe',
+    description: 'Stripe API error codes documentation'
+  },
+  {
+    name: 'stripe-payment-errors',
+    url: 'https://stripe.com/docs/declines',
+    folder: 'stripe',
+    description: 'Stripe payment declines and errors'
   },
 
-  // Chase Screenshots
+  // Chase Screenshots - Login/Registration/Errors
   {
-    name: 'chase-mobile-banking',
-    url: 'https://www.chase.com/personal/mobile-online-banking',
+    name: 'chase-login',
+    url: 'https://secure.chase.com/web/auth/dashboard',
     folder: 'chase',
-    description: 'Chase mobile banking features'
+    description: 'Chase online banking login'
   },
   {
-    name: 'chase-zelle',
-    url: 'https://www.chase.com/personal/zelle',
+    name: 'chase-enroll',
+    url: 'https://www.chase.com/personal/online-banking',
     folder: 'chase',
-    description: 'Chase Zelle transfer page'
+    description: 'Chase online banking enrollment'
+  },
+  {
+    name: 'chase-help-errors',
+    url: 'https://www.chase.com/personal/online-banking/frequently-asked-questions',
+    folder: 'chase',
+    description: 'Chase error help - FAQ page'
+  },
+  {
+    name: 'chase-security',
+    url: 'https://www.chase.com/personal/online-banking/security-center',
+    folder: 'chase',
+    description: 'Chase security center - fraud/error prevention'
   },
 ];
 
