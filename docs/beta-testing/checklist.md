@@ -13,6 +13,12 @@ Thank you from the bottom of our hearts for investing your time and insights int
 
 ---
 
+## Your Mission
+Please use the tool like you would as **part of your team’s daily workflow**. Please do **NOT** try to break the tool. You will 100% be able to do that. We are all testers, after all. 
+What we want to test is that the tool can **be used** to do the things it is supposed to do well, and **bring you value** (and hopefully joy) while using it. So NO to breaking, **YES to exploring**! Thank you!
+
+---
+
 ## 📋 Quick Navigation
 
 - [Important Note About Test Data](#important-note-about-test-data)
@@ -262,8 +268,6 @@ YAY, you've completed the beta testing checklist! Thank you so much for being pa
 
 Please fill out our feedback form to share your overall experience:
 👉 **[Beta Testing Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSeo-lYR1Pu72RQytUMODHshEyIBx98mnRQ2NHm8Vr43ZPpXsQ/viewform?usp=dialog)**
-
-This should take about 15-20 minutes and helps us understand what works and what needs improvement.
 
 ---
 
