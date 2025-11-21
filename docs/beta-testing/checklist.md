@@ -267,6 +267,8 @@ YAY, you've completed the beta testing checklist! Thank you so much for being pa
 - [ ] **GitHub OR Jira detection (not both):** Wizzo currently detects either GitHub OR Jira URLs in test generation, not both simultaneously. GitHub has priority if both are present. For now, use them separately in different test generation sessions.
 - [ ] **Home tab switching performance:** Switching between tabs may take 2-3 seconds. This is expected as we optimize performance!
 - [ ] **Posting format to GitHub/Jira:** The formatting when posting test cases to GitHub or Jira is still being refined and may look rough. However, all data should be present - if any content is missing, that's a bug! Please report it.
+- [ ] **Slack timeout warning (⚠️ triangle):** Sometimes you'll see a warning triangle from Slack indicating the response took too long. Don't worry! You can continue your workflow - everything is still working in the background. We're monitoring these occurrences and working with Slack to optimize response times.
+- [ ] **Lists not updating immediately:** After editing or adding items (products, features, test cases), the list might not refresh right away. If this happens, switch to another tab and come back - the list should then show your updates. We're actively improving the caching system to fix this.
 
 ---
 
