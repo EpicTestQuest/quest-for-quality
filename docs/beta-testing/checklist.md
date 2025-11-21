@@ -7,7 +7,7 @@
 ---
 
 ## ❤️ A Quick Note of Thanks Before We Begin
-Aaron and I are incredibly grateful that you are a part of this project! We can't tell you how excited we are to be in this beta phase afer months of hard work. You are a part of this group because we believe in your expertise and judgement. And, of course, because you are one of those rare few that belong in the "early-adopter" category. 
+Aaron and I are incredibly grateful that you are a part of this project! We can't tell you how excited we are to be in this beta phase afer months of hard work. You are a part of this group because we believe in your expertise and judgement. And, of course, because you are one of those rare few that belong in the "early-adopter" category.
 
 Thank you from the bottom of our hearts for investing your time and insights into building a tool we will all be proud to call our own once it releases to the big wide world.
 
@@ -256,7 +256,14 @@ Expected: Error message displayed, user remains on login page
 
 ## Testing Complete! 🎉
 
-YAY, you've completed the beta testing checklist! Thank you so much for being part of this project! Your feedback is so important, so don't forget to share your overall experience and any final thoughts in your GitHub Discussion thread.
+YAY, you've completed the beta testing checklist! Thank you so much for being part of this project!
+
+**📝 Final Step: Complete the Feedback Form**
+
+Please fill out our feedback form to share your overall experience:
+👉 **[Beta Testing Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSeo-lYR1Pu72RQytUMODHshEyIBx98mnRQ2NHm8Vr43ZPpXsQ/viewform?usp=dialog)**
+
+This should take about 15-20 minutes and helps us understand what works and what needs improvement.
 
 ---
 
