@@ -29,7 +29,7 @@ To make your beta testing experience as realistic as possible, we've created a c
 - **In-Depth Getting Started Guide (Optional):** [Detailed documentation](https://api.epictestquest.com/docs/) - We also have a short onboarding video in the Slack Home tab!
 - **GitHub Test Repo:** https://github.com/EpicTestQuest/quest-for-quality
 - **Example Screenshots:** https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots
-- **Jira Board:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM/list
+- **Jira Board:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM/summary
 - **Report Progress:** [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions) - Find your personal thread!
 - **For Questions or Immediate Contact:** Slack channel: #beta-testing
 - **📢 Important Updates:** We'll post any major issues, fixes, or critical updates in #beta-testing - check there if something seems off!
@@ -68,7 +68,7 @@ Part 2 done! All 4 methods worked great!
 2. Find **"Beta Testing Report - [Your Name]"**
 3. Comment when you find bugs or have suggestions!
 
-**Pro Tip:** Comment as many times as you want - one per issue or save them all for one update. Whatever works for you!
+**Tip:** Comment as many times as you want - one per issue or save them all for one update. Whatever works for you!
 
 ---
 ## Ready? Let's Go!
