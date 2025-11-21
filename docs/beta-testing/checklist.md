@@ -13,14 +13,18 @@ Thank you from the bottom of our hearts for investing your time and insights int
 
 ---
 
-## Important Note About Test Data
+## 📢 Important Note About Test Data
 
 To make your beta testing experience as realistic as possible, we've created a comprehensive test repository with:
 - 50+ GitHub PRs and Issues across multiple products (Uber, Airbnb, Amazon, Chase, Stripe)
 - Jira stories and tickets
 - Product screenshots captured from real apps
 
-**Note**: Test data (PRs, Issues, Jira tickets, screenshots) was generated with AI assistance, so you might spot occasional quirks. That's totally fine! Focus on testing whether Wizzo handles everything properly, not whether the test data is perfect because we'll continue refining it. 
+**Please note:** All of this test data (PRs, Issues, Jira tickets, and screenshots) was generated with AI assistance to speed up our beta preparation. While we've reviewed the content, there may be occasional inconsistencies, hallucinations, or inaccuracies in the test data itself. **This is totally fine!**
+
+We're focusing on testing Wizzo's functionality, not the perfection of the test data. If you notice something odd in a PR description or screenshot, that's okay - just focus on whether Wizzo handles it properly. We'll continue refining the test data based on your feedback.
+
+Thank you for your understanding! 🙏
 
 ---
 
@@ -40,7 +44,7 @@ To make your beta testing experience as realistic as possible, we've created a c
 
 We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
 
-### Three Ways to Comment
+### 🎯 Three Ways to Comment
 
 **1️⃣ Quick Progress Updates** (after completing sections)
 ```
@@ -59,17 +63,16 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 💡 The focus areas dropdown could use helper text - wasn't sure how many to pick
 ```
 
-### Your Discussion Thread:
+### 📝 Your Discussion Thread:
 1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
 2. Find **"Beta Testing Report - [Your Name]"**
 3. Click **"Comment"** at the bottom
 4. Use the examples above as inspiration!
 
-**Note:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
+**Pro Tip:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
 
 ---
-## Ready? Let's Go!
----
+
 ## Part 1: Products, Features & Personas
 
 ### Create a Product
@@ -110,12 +113,17 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ---
 
-## Part 2: Test Scrolls - 5 Different Ways
+## Part 2: Test Scrolls - 4 Different Ways
 
 ### Method 1: Conversational Flow with Persona
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"New Chat"** button (top right)
 - [ ] In the DM conversation, describe what you want to test
+- [ ] When Wizzo asks, select a **product** (e.g., Uber)
+- [ ] When Wizzo asks, select a **feature** (optional - or skip)
+- [ ] When Wizzo asks, select a **persona** from your list
+- [ ] When Wizzo asks, select **at least 3 focus areas** (e.g., Accessibility, Security, Usability)
+- [ ] Choose a format (Traditional, BDD/Gherkin, or Test Charter)
 - [ ] Review the generated test cases
 
 **What to test:** "Help me test the Uber ride booking flow"
@@ -125,9 +133,11 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Method 2: Modal Flow from Test Scrolls Subtab
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Forge Test Scrolls"** button
-- [ ] Select a product
+- [ ] Step 1: Select a product
+- [ ] Step 2: Optionally select a feature
 - [ ] Fill in test requirements in the text area
-- [ ] Select **at least 2 focus areas**
+- [ ] Select **at least 3 focus areas**
+- [ ] Choose format
 - [ ] Click "Forge Test Scrolls" and wait for DM with results
 
 **What to test:** "Test the payment processing for edge cases like network failures"
@@ -137,25 +147,25 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Method 3: Create with Image Upload
 - [ ] Click **"New Chat"** button to start conversational flow
 - [ ] Upload a screenshot/image (PNG or JPG) in the DM
-  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
+  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots) with examples for:
+    - **Uber**: `uber-signup.png` (registration), `uber-help-errors.png` (payment errors)
+    - **Airbnb**: `airbnb-login.png` (login), `airbnb-signup.png` (registration), `airbnb-help-errors.png` (booking errors)
+    - **Amazon**: `amazon-signin.png` (login), `amazon-register.png` (registration), `amazon-help-errors.png` (payment declined), `amazon-cart-error.png` (cart errors)
+    - **Stripe**: `stripe-login.png` (dashboard login)
   - **Alternatively:** Take your own screenshot of any login, signup, or error page
+- [ ] Type: "Generate test cases for this screen focusing on usability and accessibility"
+- [ ] Wizzo will show "Forge Test Scrolls" button after seeing your image
+- [ ] Click the button to start the modal flow with image context
+- [ ] Complete the product selection and test details
 - [ ] Review how Wizzo uses the image context in test cases
 
 ---
 
-### Method 4: Generate from GitHub PR or Issue
-- [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Paste a GitHub PR or Issue URL in the requierment step:
-  - `https://github.com/EpicTestQuest/quest-for-quality/pull/56`
-- [ ] Complete the flow and review generated tests
-- [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
-
----
-
-### Method 5: Craft Your Own (Manual Entry)
+### Method 4: Craft Your Own (Manual Entry)
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Craft Your Own"** button
 - [ ] Fill in: Title, Content (paste your own test case), Product
+- [ ] Optionally select a feature if one exists
 - [ ] Save and verify it appears in your test scrolls
 
 **Suggested test case:**
@@ -172,14 +182,16 @@ Expected: Error message displayed, user remains on login page
 
 ## Part 3: GitHub Integration Testing
 
-### Generate from one PR Types
+### Generate from Multiple PR Types
 - [ ] **Large PR (complex):** Use PR #56 (Airbnb - 287 files changed)
   - Verify Wizzo extracts acceptance criteria from the massive PR description
+  - Check focus areas suggested from labels: `airbnb`, `qa-review-needed`, `feature`
 - [ ] **Feature PR (standard):** Use PR #55 (Uber - surge pricing)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/55`
   - Verify enrichment works for Uber product
 - [ ] **Security PR:** Use PR #54 (Stripe - PCI compliance)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/54`
+  - Check if security focus areas are auto-suggested
 
 ---
 
@@ -187,8 +199,9 @@ Expected: Error message displayed, user remains on login page
 - [ ] Find any test case card in your Test Scrolls subtab
 - [ ] Click on the test case to **view it in detail**
 - [ ] In the test case viewer, look for **"Post to GitHub"** button
-- [ ] Click it and paste a PR/Issue URL to post to
+- [ ] Click it and select a PR/Issue to post to
 - [ ] Go to GitHub and verify the test case appears as a comment
+- [ ] Check formatting (should be readable markdown)
 
 ---
 
@@ -201,6 +214,7 @@ Expected: Error message displayed, user remains on login page
 - [ ] Select a product (e.g., Chase Mobile Banking)
 - [ ] In the **"Jira Issue URL"** field, paste a ticket from:
   - `https://epictestquest.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog`
+- [ ] Verify Wizzo shows "✅ SCRUM-XXX: [ticket title]"
 - [ ] Check that test cases include Jira acceptance criteria
 
 **Note:** If you don't see the Jira URL field, you may need to connect Jira first (Home Tab → Wizzo's Workshop → "Connect to Jira")
@@ -211,7 +225,7 @@ Expected: Error message displayed, user remains on login page
 - [ ] Find any test case card in your Test Scrolls subtab
 - [ ] Click on the test case to **view it in detail**
 - [ ] In the test case viewer, look for **"Post to Jira"** button
-- [ ] Click it and enter a Jira ticket to post to
+- [ ] Click it and select a Jira ticket to post to
 - [ ] Go to Jira and verify the test case appears as a comment
 - [ ] Check formatting (should be readable)
 
