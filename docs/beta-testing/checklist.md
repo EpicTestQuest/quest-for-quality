@@ -2,8 +2,6 @@
 
 **You'll need:** 30-45 minutes
 
-**Pre-requisites:** GitHub App and Jira OAuth already configured
-
 ---
 
 ## ❤️ A Quick Note of Thanks Before We Begin
