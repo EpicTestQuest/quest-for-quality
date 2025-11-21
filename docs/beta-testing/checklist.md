@@ -236,7 +236,6 @@ Expected: Error message displayed, user remains on login page
 - [ ] Go to Home Tab → 🧠 Focus Break tab
 - [ ] Play for 1-2 minutes any of the games
 - [ ] Verify the game works smoothly
-- [ ] Note your experience (relaxing? distracting? helpful?)
 
 ---
 
