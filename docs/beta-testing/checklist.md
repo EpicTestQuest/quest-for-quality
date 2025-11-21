@@ -22,11 +22,35 @@ Thank you for your understanding! 🙏
 
 ## Resources
 
-- **Getting Started Guide:** https://api.epictestquest.com/docs/
+- **Getting Started Guide (Optional):** [Detailed documentation](https://api.epictestquest.com/docs/) - We also have an onboarding video in the Slack Home tab!
 - **GitHub Test Repo:** https://github.com/EpicTestQuest/quest-for-quality
 - **Example Screenshots:** https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots
 - **Jira Board:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM/list
-- **Bug Reports:** Post in #beta-testing in the ETQ-community workspace
+- **Report Progress:** [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions) - Find your personal thread!
+- **Ask Questions:** #beta-testing Slack channel
+
+---
+
+## How to Report Your Findings
+
+We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
+
+**Your Discussion Thread:**
+1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
+2. Find the discussion titled **"Beta Testing Report - [Your Name]"**
+3. Comment as you test! You can:
+   - Post updates as you complete sections
+   - Report bugs immediately when you find them (one comment per bug is fine)
+   - Share suggestions or questions anytime
+   - Add your overall experience at the end
+
+**What to Include:**
+- ✅ **Works as expected** - Quick note saying section completed
+- ⚠️ **Works but confusing** - Describe what was unclear
+- ❌ **Broken/Error** - Screenshot + steps to reproduce
+- 💡 **Suggestion** - Ideas for improvement
+
+**No strict format required!** Comment however works best for you - whether that's one big update at the end or multiple small comments as you go.
 
 ---
 
@@ -266,28 +290,7 @@ Expected: Error message displayed, user remains on login page
 
 ## Testing Complete! 🎉
 
-### How to Report Your Findings
-
-We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
-
-**Your Discussion Thread:**
-1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
-2. Find the discussion titled **"Beta Testing Report - [Your Name]"**
-3. Comment as you test! You can:
-   - Post updates as you complete sections
-   - Report bugs immediately when you find them (one comment per bug is fine)
-   - Share suggestions or questions anytime
-   - Add your overall experience at the end
-
-**What to Include:**
-- ✅ **Works as expected** - Quick note saying section completed
-- ⚠️ **Works but confusing** - Describe what was unclear
-- ❌ **Broken/Error** - Screenshot + steps to reproduce
-- 💡 **Suggestion** - Ideas for improvement
-
-**No strict format required!** Comment however works best for you - whether that's one big update at the end or multiple small comments as you go.
-
-**Additional Support:** Post questions in #beta-testing Slack channel for real-time help!
+Thank you for completing the beta testing checklist! Don't forget to share your overall experience and any final thoughts in your GitHub Discussion thread.
 
 ---
 
