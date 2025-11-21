@@ -125,7 +125,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Forge Test Scrolls with Wizzo"** button
 - [ ] Select a product
-- [ ] Fill in test requirements in the text area
+- [ ] Fill in all the required fields
 - [ ] Select **at least 2 focus areas**
 - [ ] Click "Forge Test Scrolls" and wait for DM with results
 
@@ -153,17 +153,18 @@ Expected: Error message displayed, user remains on login page
 
 ## Part 3: GitHub Integration Testing
 
-### Generate a test case from one PR Type
-- [ ] **Large PR (complex):** Use PR #56 (Airbnb - 287 files changed)
+### Generate a Test Case from One PR Type
+- [ ] Click **"New Chat"** button to start conversational flow
+- [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
+- [ ] Paste your chosen GitHub PR or Issue URL in the requirement step
+- [ ] 1. **Large PR (complex):** Example PR #56 (Airbnb - 287 files changed)
+  - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`
   - Verify Wizzo extracts acceptance criteria from the massive PR description
-- [ ] **Feature PR (standard):** Use PR #55 (Uber - surge pricing)
+- [ ] 2. **Feature PR (standard):** Example PR #55 (Uber - surge pricing)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/55`
   - Verify enrichment works for Uber product
-- [ ] **Security PR:** Use PR #54 (Stripe - PCI compliance)
+- [ ] 3. **Security PR:** Example PR #54 (Stripe - PCI compliance)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/54`
-     
-- [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Paste a GitHub PR or Issue URL in the requierment step
 - [ ] Complete the flow and review generated tests
 - [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
 
