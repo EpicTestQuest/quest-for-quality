@@ -266,15 +266,28 @@ Expected: Error message displayed, user remains on login page
 
 ## Testing Complete! 🎉
 
-### What to Report
+### How to Report Your Findings
 
-**For each task above, note:**
-- ✅ **Works as expected** - No action needed
+We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
+
+**Your Discussion Thread:**
+1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
+2. Find the discussion titled **"Beta Testing Report - [Your Name]"**
+3. Comment as you test! You can:
+   - Post updates as you complete sections
+   - Report bugs immediately when you find them (one comment per bug is fine)
+   - Share suggestions or questions anytime
+   - Add your overall experience at the end
+
+**What to Include:**
+- ✅ **Works as expected** - Quick note saying section completed
 - ⚠️ **Works but confusing** - Describe what was unclear
 - ❌ **Broken/Error** - Screenshot + steps to reproduce
 - 💡 **Suggestion** - Ideas for improvement
 
-**Report in:** #beta-testing channel
+**No strict format required!** Comment however works best for you - whether that's one big update at the end or multiple small comments as you go.
+
+**Additional Support:** Post questions in #beta-testing Slack channel for real-time help!
 
 ---
 
