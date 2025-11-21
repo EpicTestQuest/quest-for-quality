@@ -302,7 +302,13 @@ YAY, you've completed the beta testing checklist! Thank you so much for being pa
 
 ## Common Issues to Watch For
 
-- [ ] **First message not processed (Known Issue):** In conversational flow, sometimes the first message you send isn't processed when Wizzo asks for requirements. If this happens, simply copy/paste your original message into the requirements prompt. Please note when this occurs - we're actively working on fixing this!
+**Known Issues (We're Working On These!):**
+- [ ] **First message not processed:** In conversational flow, sometimes the first message you send isn't processed when Wizzo asks for requirements. If this happens, simply copy/paste your original message into the requirements prompt. Please note when this occurs!
+- [ ] **GitHub OR Jira detection (not both):** Wizzo currently detects either GitHub OR Jira URLs in test generation, not both simultaneously. GitHub has priority if both are present. For now, use them separately in different test generation sessions.
+- [ ] **Home tab switching performance:** Switching between tabs may take 2-3 seconds. This is expected as we optimize performance!
+- [ ] **Posting format to GitHub/Jira:** The formatting when posting test cases to GitHub or Jira is still being refined and may look rough. However, all data should be present - if any content is missing, that's a bug! Please report it.
+
+**Things to Test:**
 - [ ] **GitHub private repo error:** If you try a private repo PR, did you get a clear "Notify Admin" option?
 - [ ] **Jira OAuth expiration:** If Jira token expires, does auto-refresh work or do you get a reconnect prompt?
 - [ ] **Invalid URLs:** Do you get helpful error messages?
