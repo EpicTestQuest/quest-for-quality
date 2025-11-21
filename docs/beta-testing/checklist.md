@@ -13,6 +13,21 @@ Thank you from the bottom of our hearts for investing your time and insights int
 
 ---
 
+## 📋 Quick Navigation
+
+- [Important Note About Test Data](#important-note-about-test-data)
+- [Resources](#resources)
+- [How to Report Your Findings](#how-to-report-your-findings)
+- [Part 1: Products, Features & Personas](#part-1-products-features--personas)
+- [Part 2: Test Scrolls - 4 Different Ways](#part-2-test-scrolls---4-different-ways)
+- [Part 3: GitHub Integration Testing](#part-3-github-integration-testing)
+- [Part 4: Jira Integration Testing](#part-4-jira-integration-testing)
+- [Part 5: Quality Parties](#part-5-quality-parties)
+- [Part 6: Focus Break](#part-6-focus-break)
+- [Common Issues to Watch For](#common-issues-to-watch-for)
+
+---
+
 ## Important Note About Test Data
 
 To make your beta testing experience as realistic as possible, we've created a comprehensive test repository with:
