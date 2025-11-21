@@ -296,6 +296,7 @@ Thank you for completing the beta testing checklist! Don't forget to share your 
 
 ## Common Issues to Watch For
 
+- [ ] **First message not processed (Known Issue):** In conversational flow, sometimes the first message you send isn't processed when Wizzo asks for requirements. If this happens, simply copy/paste your original message into the requirements prompt. Please note when this occurs - we're actively working on fixing this!
 - [ ] **GitHub private repo error:** If you try a private repo PR, did you get a clear "Notify Admin" option?
 - [ ] **Jira OAuth expiration:** If Jira token expires, does auto-refresh work or do you get a reconnect prompt?
 - [ ] **Multiple GitHub URLs:** If you paste 2+ PR URLs, does Wizzo handle them correctly?
