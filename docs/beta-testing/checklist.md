@@ -1,7 +1,15 @@
-# Wizzo Beta Testing Checklist
+# Welcome! Here's Your Wizzo Beta Testing Checklist
 
-**Time estimate:** 30-45 minutes
-**Prerequisites:** GitHub App and Jira OAuth already configured
+**You'll need:** 30-45 minutes
+
+**Pre-requisites:** GitHub App and Jira OAuth already configured
+
+---
+
+## ❤️ A Quick Note of Thanks Before We Begin
+Aaron and I are incredibly grateful that you are a part of this project! We can't tell you how excited we are to be in this beta phase afer months of hard work. You are a part of this group because we believe in your expertise and judgement. And, of course, because you are one of those rare few that belong in the "early-adopter" category. 
+
+Thank you from the bottom of our hearts for investing your time and insights into building a tool we will all be proud to call our own once it releases to the big wide world.
 
 ---
 
@@ -22,12 +30,12 @@ Thank you for your understanding! 🙏
 
 ## Resources
 
-- **Getting Started Guide (Optional):** [Detailed documentation](https://api.epictestquest.com/docs/) - We also have an onboarding video in the Slack Home tab!
+- **In-Depth Getting Started Guide (Optional):** [Detailed documentation](https://api.epictestquest.com/docs/) - We also have a short onboarding video in the Slack Home tab!
 - **GitHub Test Repo:** https://github.com/EpicTestQuest/quest-for-quality
 - **Example Screenshots:** https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots
 - **Jira Board:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM/list
 - **Report Progress:** [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions) - Find your personal thread!
-- **Ask Questions:** #beta-testing Slack channel
+- **For Questions or Immediate Contact:** Slack channel: #beta-testing
 
 ---
 
@@ -41,14 +49,12 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 3. Comment as you test! You can:
    - Post updates as you complete sections
    - Report bugs immediately when you find them (one comment per bug is fine)
-   - Share suggestions or questions anytime
-   - Add your overall experience at the end
-
+   - Share any suggestions you have
+     
 **What to Include:**
 - ✅ **Works as expected** - Quick note saying section completed
 - ⚠️ **Works but confusing** - Describe what was unclear
 - ❌ **Broken/Error** - Screenshot + steps to reproduce
-- 💡 **Suggestion** - Ideas for improvement
 
 **No strict format required!** Comment however works best for you - whether that's one big update at the end or multiple small comments as you go.
 
@@ -290,7 +296,7 @@ Expected: Error message displayed, user remains on login page
 
 ## Testing Complete! 🎉
 
-Thank you for completing the beta testing checklist! Don't forget to share your overall experience and any final thoughts in your GitHub Discussion thread.
+YAY, you've completed the beta testing checklist! Thank you so much for being part of this project! Your feedback is so important, so don't forget to share your overall experience and any final thoughts in your GitHub Discussion thread.
 
 ---
 
@@ -299,7 +305,6 @@ Thank you for completing the beta testing checklist! Don't forget to share your 
 - [ ] **First message not processed (Known Issue):** In conversational flow, sometimes the first message you send isn't processed when Wizzo asks for requirements. If this happens, simply copy/paste your original message into the requirements prompt. Please note when this occurs - we're actively working on fixing this!
 - [ ] **GitHub private repo error:** If you try a private repo PR, did you get a clear "Notify Admin" option?
 - [ ] **Jira OAuth expiration:** If Jira token expires, does auto-refresh work or do you get a reconnect prompt?
-- [ ] **Multiple GitHub URLs:** If you paste 2+ PR URLs, does Wizzo handle them correctly?
 - [ ] **Invalid URLs:** Do you get helpful error messages?
 - [ ] **Modal timeouts:** Do modals respond within 3 seconds or do you get timeout errors?
 - [ ] **AI generation failures:** If test generation fails, is the error message clear?
@@ -317,4 +322,4 @@ If you have extra time, try these scenarios:
 
 ---
 
-**Thank you for beta testing Wizzo! Your feedback helps us build a better product. 🙏**
+**Thank you for beta testing Wizzo! Your feedback will help shape the future of testing. 🥳**
