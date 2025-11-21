@@ -13,18 +13,14 @@ Thank you from the bottom of our hearts for investing your time and insights int
 
 ---
 
-## 📢 Important Note About Test Data
+## Important Note About Test Data
 
 To make your beta testing experience as realistic as possible, we've created a comprehensive test repository with:
 - 50+ GitHub PRs and Issues across multiple products (Uber, Airbnb, Amazon, Chase, Stripe)
 - Jira stories and tickets
 - Product screenshots captured from real apps
 
-**Please note:** All of this test data (PRs, Issues, Jira tickets, and screenshots) was generated with AI assistance to speed up our beta preparation. While we've reviewed the content, there may be occasional inconsistencies, hallucinations, or inaccuracies in the test data itself. **This is totally fine!**
-
-We're focusing on testing Wizzo's functionality, not the perfection of the test data. If you notice something odd in a PR description or screenshot, that's okay - just focus on whether Wizzo handles it properly. We'll continue refining the test data based on your feedback.
-
-Thank you for your understanding! 🙏
+**Note**: Test data (PRs, Issues, Jira tickets, screenshots) was generated with AI assistance, so you might spot occasional quirks. That's totally fine! Focus on testing whether Wizzo handles everything properly, not whether the test data is perfect because we'll continue refining it. 
 
 ---
 
@@ -44,7 +40,7 @@ Thank you for your understanding! 🙏
 
 We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
 
-### 🎯 Three Ways to Comment
+### Three Ways to Comment
 
 **1️⃣ Quick Progress Updates** (after completing sections)
 ```
@@ -63,16 +59,17 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 💡 The focus areas dropdown could use helper text - wasn't sure how many to pick
 ```
 
-### 📝 Your Discussion Thread:
+### Your Discussion Thread:
 1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
 2. Find **"Beta Testing Report - [Your Name]"**
 3. Click **"Comment"** at the bottom
 4. Use the examples above as inspiration!
 
-**Pro Tip:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
+**Note:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
 
 ---
-
+## Ready? Let's Go!
+---
 ## Part 1: Products, Features & Personas
 
 ### Create a Product
