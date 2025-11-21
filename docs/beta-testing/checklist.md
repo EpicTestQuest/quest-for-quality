@@ -116,11 +116,6 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"New Chat"** button (top right)
 - [ ] In the DM conversation, describe what you want to test
-- [ ] When Wizzo asks, select a **product** (e.g., Uber)
-- [ ] When Wizzo asks, select a **feature** (optional - or skip)
-- [ ] When Wizzo asks, select a **persona** from your list
-- [ ] When Wizzo asks, select **at least 3 focus areas** (e.g., Accessibility, Security, Usability)
-- [ ] Choose a format (Traditional, BDD/Gherkin, or Test Charter)
 - [ ] Review the generated test cases
 
 **What to test:** "Help me test the Uber ride booking flow"
@@ -130,11 +125,9 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Method 2: Modal Flow from Test Scrolls Subtab
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Forge Test Scrolls"** button
-- [ ] Step 1: Select a product
-- [ ] Step 2: Optionally select a feature
+- [ ] Select a product
 - [ ] Fill in test requirements in the text area
-- [ ] Select **at least 3 focus areas**
-- [ ] Choose format
+- [ ] Select **at least 2 focus areas**
 - [ ] Click "Forge Test Scrolls" and wait for DM with results
 
 **What to test:** "Test the payment processing for edge cases like network failures"
@@ -150,23 +143,14 @@ We've created a **personal GitHub Discussion** for each tester to track progress
     - **Amazon**: `amazon-signin.png` (login), `amazon-register.png` (registration), `amazon-help-errors.png` (payment declined), `amazon-cart-error.png` (cart errors)
     - **Stripe**: `stripe-login.png` (dashboard login)
   - **Alternatively:** Take your own screenshot of any login, signup, or error page
-- [ ] Type: "Generate test cases for this screen focusing on usability and accessibility"
-- [ ] Wizzo will show "Forge Test Scrolls" button after seeing your image
-- [ ] Click the button to start the modal flow with image context
-- [ ] Complete the product selection and test details
 - [ ] Review how Wizzo uses the image context in test cases
 
 ---
 
 ### Method 4: Generate from GitHub PR or Issue
 - [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Paste a GitHub PR or Issue URL:
+- [ ] Paste a GitHub PR or Issue URL in the requierment step:
   - `https://github.com/EpicTestQuest/quest-for-quality/pull/56`
-- [ ] Wizzo shows a preview card with PR/Issue details
-- [ ] Click **"Generate Tests"** button on the preview card
-- [ ] Select product when asked: **Airbnb**
-- [ ] At the requirements gathering stage, paste the PR URL again or let Wizzo use the context
-- [ ] Notice how Wizzo auto-suggests focus areas from PR labels
 - [ ] Complete the flow and review generated tests
 - [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
 
@@ -176,7 +160,6 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Craft Your Own"** button
 - [ ] Fill in: Title, Content (paste your own test case), Product
-- [ ] Optionally select a feature if one exists
 - [ ] Save and verify it appears in your test scrolls
 
 **Suggested test case:**
@@ -193,16 +176,14 @@ Expected: Error message displayed, user remains on login page
 
 ## Part 3: GitHub Integration Testing
 
-### Generate from Multiple PR Types
+### Generate from one PR Types
 - [ ] **Large PR (complex):** Use PR #56 (Airbnb - 287 files changed)
   - Verify Wizzo extracts acceptance criteria from the massive PR description
-  - Check focus areas suggested from labels: `airbnb`, `qa-review-needed`, `feature`
 - [ ] **Feature PR (standard):** Use PR #55 (Uber - surge pricing)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/55`
   - Verify enrichment works for Uber product
 - [ ] **Security PR:** Use PR #54 (Stripe - PCI compliance)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/54`
-  - Check if security focus areas are auto-suggested
 
 ---
 
@@ -210,9 +191,8 @@ Expected: Error message displayed, user remains on login page
 - [ ] Find any test case card in your Test Scrolls subtab
 - [ ] Click on the test case to **view it in detail**
 - [ ] In the test case viewer, look for **"Post to GitHub"** button
-- [ ] Click it and select a PR/Issue to post to
+- [ ] Click it and paste a PR/Issue URL to post to
 - [ ] Go to GitHub and verify the test case appears as a comment
-- [ ] Check formatting (should be readable markdown)
 
 ---
 
@@ -225,7 +205,6 @@ Expected: Error message displayed, user remains on login page
 - [ ] Select a product (e.g., Chase Mobile Banking)
 - [ ] In the **"Jira Issue URL"** field, paste a ticket from:
   - `https://epictestquest.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog`
-- [ ] Verify Wizzo shows "✅ SCRUM-XXX: [ticket title]"
 - [ ] Check that test cases include Jira acceptance criteria
 
 **Note:** If you don't see the Jira URL field, you may need to connect Jira first (Home Tab → Wizzo's Workshop → "Connect to Jira")
@@ -236,7 +215,7 @@ Expected: Error message displayed, user remains on login page
 - [ ] Find any test case card in your Test Scrolls subtab
 - [ ] Click on the test case to **view it in detail**
 - [ ] In the test case viewer, look for **"Post to Jira"** button
-- [ ] Click it and select a Jira ticket to post to
+- [ ] Click it and enter a Jira ticket to post to
 - [ ] Go to Jira and verify the test case appears as a comment
 - [ ] Check formatting (should be readable)
 
