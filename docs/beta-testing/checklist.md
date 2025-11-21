@@ -43,20 +43,32 @@ Thank you for your understanding! 🙏
 
 We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
 
-**Your Discussion Thread:**
-1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
-2. Find the discussion titled **"Beta Testing Report - [Your Name]"**
-3. Comment as you test! You can:
-   - Post updates as you complete sections
-   - Report bugs immediately when you find them (one comment per bug is fine)
-   - Share any suggestions you have
-     
-**What to Include:**
-- ✅ **Works as expected** - Quick note saying section completed
-- ⚠️ **Works but confusing** - Describe what was unclear
-- ❌ **Broken/Error** - Screenshot + steps to reproduce
+### 🎯 Three Ways to Comment
 
-**No strict format required!** Comment however works best for you - whether that's one big update at the end or multiple small comments as you go.
+**1️⃣ Quick Progress Updates** (after completing sections)
+```
+✅ Part 2 done! Methods 1-3 worked great, Method 4 had a bug (see below)
+```
+
+**2️⃣ Detailed Bug Reports** (when you find issues)
+```
+❌ Bug - Method 4 GitHub Integration
+- Pasted PR #55, preview showed, but "Generate Tests" button missing
+- Screenshot: [link]
+```
+
+**3️⃣ Suggestions & Questions** (anytime)
+```
+💡 The focus areas dropdown could use helper text - wasn't sure how many to pick
+```
+
+### 📝 Your Discussion Thread:
+1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
+2. Find **"Beta Testing Report - [Your Name]"**
+3. Click **"Comment"** at the bottom
+4. Use the examples above as inspiration!
+
+**Pro Tip:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
 
 ---
 
