@@ -75,14 +75,8 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Create a Product
 - [ ] Go to Home Tab → 💎 Products tab → Products subtab
 - [ ] Click **"Add Product"** button
-- [ ] Fill in: Name, Type (choose any), Industry, Description
+- [ ] Fill in the fields
 - [ ] Save and verify it appears in your products list
-
-**Suggested test data:**
-- Name: "Your Company App"
-- Type: Web App
-- Industry: Any
-- Description: "Beta testing product"
 
 ---
 
@@ -90,13 +84,8 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] Go to Home Tab → 💎 Products tab → Features subtab
 - [ ] Click **"Add Feature"** button
 - [ ] Select a product from dropdown (use one of the existing: Uber, Airbnb, Amazon, Chase, or Stripe)
-- [ ] Fill in: Name and Description
+- [ ] Fill in the fields
 - [ ] Save and verify it appears in features list
-
-**Suggested test data:**
-- Product: Pick any existing product
-- Name: "Beta Test Feature"
-- Description: "Testing the feature creation flow"
 
 ---
 
@@ -110,7 +99,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ---
 
-## Part 2: Test Scrolls - 5 Different Ways
+## Part 2: Test Scrolls - 4 Different Ways
 
 ### Method 1: Conversational Flow with Persona
 - [ ] Go to Home Tab → Test Scrolls subtab
@@ -143,16 +132,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ---
 
-### Method 4: Generate from GitHub PR or Issue
-- [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Paste a GitHub PR or Issue URL in the requierment step:
-  - `https://github.com/EpicTestQuest/quest-for-quality/pull/56`
-- [ ] Complete the flow and review generated tests
-- [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
-
----
-
-### Method 5: Craft Your Own (Manual Entry)
+### Method 4: Craft Your Own (Manual Entry)
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"Craft Your Own"** button
 - [ ] Fill in: Title, Content (paste your own test case), Product
@@ -172,7 +152,7 @@ Expected: Error message displayed, user remains on login page
 
 ## Part 3: GitHub Integration Testing
 
-### Generate from one PR Types
+### Generate a test case from one PR Type
 - [ ] **Large PR (complex):** Use PR #56 (Airbnb - 287 files changed)
   - Verify Wizzo extracts acceptance criteria from the massive PR description
 - [ ] **Feature PR (standard):** Use PR #55 (Uber - surge pricing)
@@ -180,6 +160,11 @@ Expected: Error message displayed, user remains on login page
   - Verify enrichment works for Uber product
 - [ ] **Security PR:** Use PR #54 (Stripe - PCI compliance)
   - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/54`
+     
+- [ ] Click **"New Chat"** button to start conversational flow
+- [ ] Paste a GitHub PR or Issue URL in the requierment step
+- [ ] Complete the flow and review generated tests
+- [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
 
 ---
 
@@ -192,7 +177,7 @@ Expected: Error message displayed, user remains on login page
 
 ---
 
-## Part 4: Jira Integration Testing (Optional)
+## Part 4: Jira Integration Testing
 
 **Prerequisites:** You must have connected Jira OAuth (one-time setup)
 
@@ -221,21 +206,9 @@ Expected: Error message displayed, user remains on login page
 
 ### Start a Quality Party
 - [ ] In any Slack channel (or #wizzo-beta-testing), type: `/start-party`
-- [ ] Modal appears - fill in:
-  - **Session Type:** Choose Test Case, Product, or Feature
-  - **Subject:** Select which test case/product/feature to discuss
-  - **Goal:** Pick one of the 11 goals
-    - For Test Cases: Gap Analysis, Test Improvement, Cross-Platform, Accessibility, or Test Data
-    - For Products/Features: Test Strategy, Quality Metrics, Exploratory Testing, Knowledge Transfer, Integration Testing, or Customer Scenarios
-  - **Duration:** Choose 6h, 12h, 24h, 48h, 72h, or 96h
+- [ ] Modal appears - fill in or select fields and lists
 - [ ] Click "Start Quality Party"
 - [ ] Verify Wizzo posts initial insights to the thread
-
-**Suggested test:**
-- Session Type: Feature
-- Feature: Pick any (e.g., "Uber - Driver & Rider Safety")
-- Goal: 🎭 Customer Scenarios
-- Duration: 24h
 
 ---
 
@@ -292,24 +265,6 @@ YAY, you've completed the beta testing checklist! Thank you so much for being pa
 - [ ] **GitHub OR Jira detection (not both):** Wizzo currently detects either GitHub OR Jira URLs in test generation, not both simultaneously. GitHub has priority if both are present. For now, use them separately in different test generation sessions.
 - [ ] **Home tab switching performance:** Switching between tabs may take 2-3 seconds. This is expected as we optimize performance!
 - [ ] **Posting format to GitHub/Jira:** The formatting when posting test cases to GitHub or Jira is still being refined and may look rough. However, all data should be present - if any content is missing, that's a bug! Please report it.
-
-**Things to Test:**
-- [ ] **GitHub private repo error:** If you try a private repo PR, did you get a clear "Notify Admin" option?
-- [ ] **Jira OAuth expiration:** If Jira token expires, does auto-refresh work or do you get a reconnect prompt?
-- [ ] **Invalid URLs:** Do you get helpful error messages?
-- [ ] **Modal timeouts:** Do modals respond within 3 seconds or do you get timeout errors?
-- [ ] **AI generation failures:** If test generation fails, is the error message clear?
-
----
-
-## Edge Cases Worth Testing (Optional)
-
-If you have extra time, try these scenarios:
-
-- [ ] **Invalid GitHub URL:** Paste a random URL and verify error handling
-- [ ] **Private GitHub repo:** Try a PR from a private repo not in the GitHub App installation
-- [ ] **Expired Jira session:** Disconnect and reconnect Jira OAuth
-- [ ] **Concurrent Quality Parties:** Start 2-3 parties in different channels simultaneously
 
 ---
 
