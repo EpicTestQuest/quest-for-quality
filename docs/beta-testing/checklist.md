@@ -114,8 +114,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ### Method 2: Create with Image Upload
 - [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Click **"Trasform Screenshot"**
-- [ ] Upload a screenshot/image (PNG or JPG) in the DM
+- [ ] Upload a screenshot/image (PNG or JPG) during the requirement step in the chat flow
   - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
   - **Alternatively:** Take your own screenshot of any login, signup, or error page
 - [ ] Review how Wizzo uses the image context in test cases
