@@ -30,6 +30,7 @@ What we want to test is that the tool can **be used** to do the things it is sup
 - [Part 4: Jira Integration Testing](#part-4-jira-integration-testing)
 - [Part 5: Quality Parties](#part-5-quality-parties)
 - [Part 6: Focus Break](#part-6-focus-break)
+- [Testing Complete! 🎉](#testing-complete-)
 - [Common Issues to Watch For](#common-issues-to-watch-for)
 
 ---
