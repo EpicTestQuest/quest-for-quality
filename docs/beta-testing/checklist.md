@@ -103,31 +103,34 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Method 1: Conversational Flow with Persona
 - [ ] Go to Home Tab → Test Scrolls subtab
 - [ ] Click **"New Chat"** button (top right)
-- [ ] In the DM conversation, describe what you want to test
+- [ ] In the chat conversation, either click **"Forge Test Scrolls"** or write what you want to test
+- [ ] Go through the flow and create test cases
 - [ ] Review the generated test cases
+- [ ] Choose and save one permanently
 
 **Example prompt:** "Help me test the Uber ride booking flow"
 
 ---
 
-### Method 2: Modal Flow from Test Scrolls Subtab
+### Method 2: Create with Image Upload
+- [ ] Click **"New Chat"** button to start conversational flow
+- [ ] Click **"Trasform Screenshot"**
+- [ ] Upload a screenshot/image (PNG or JPG) in the DM
+  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
+  - **Alternatively:** Take your own screenshot of any login, signup, or error page
+- [ ] Review how Wizzo uses the image context in test cases
+
+---
+
+### Method 3: Modal Flow from Test Scrolls Subtab
 - [ ] Go to Home Tab → Test Scrolls subtab
-- [ ] Click **"Forge Test Scrolls"** button
+- [ ] Click **"Forge Test Scrolls with Wizzo"** button
 - [ ] Select a product
 - [ ] Fill in test requirements in the text area
 - [ ] Select **at least 2 focus areas**
 - [ ] Click "Forge Test Scrolls" and wait for DM with results
 
 **Example prompt:** "Test the payment processing for edge cases like network failures"
-
----
-
-### Method 3: Create with Image Upload
-- [ ] Click **"New Chat"** button to start conversational flow
-- [ ] Upload a screenshot/image (PNG or JPG) in the DM
-  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
-  - **Alternatively:** Take your own screenshot of any login, signup, or error page
-- [ ] Review how Wizzo uses the image context in test cases
 
 ---
 
