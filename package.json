@@ -1,0 +1,20 @@
+{
+  "name": "quest-for-quality-screenshots",
+  "version": "1.0.0",
+  "description": "Screenshot capture for Wizzo beta testing",
+  "main": "capture-screenshots.js",
+  "scripts": {
+    "capture": "node capture-screenshots.js",
+    "setup": "npm install && npx playwright install chromium"
+  },
+  "keywords": [
+    "testing",
+    "screenshots",
+    "playwright"
+  ],
+  "author": "Epic Test Quest",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}
