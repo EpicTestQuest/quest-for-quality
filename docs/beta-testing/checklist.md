@@ -36,6 +36,7 @@ Thank you for your understanding! 🙏
 - **Jira Board:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM/list
 - **Report Progress:** [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions) - Find your personal thread!
 - **For Questions or Immediate Contact:** Slack channel: #beta-testing
+- **📢 Important Updates:** We'll post any major issues, fixes, or critical updates in #beta-testing - check there if something seems off!
 
 ---
 
