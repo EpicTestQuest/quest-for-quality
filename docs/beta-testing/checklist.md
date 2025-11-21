@@ -154,8 +154,8 @@ Expected: Error message displayed, user remains on login page
 ## Part 3: GitHub Integration Testing
 
 ### Generate a Test Case from One PR Type
-- [ ] Click **"New Chat"** button to start conversational flow
 - [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
+- [ ] Click **"New Chat"** button to start conversational flow
 - [ ] Paste your chosen GitHub PR URL or Issue URL in the requirement step
   - e.g. URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`,`https://github.com/EpicTestQuest/quest-for-quality/pull/55`
 - [ ] Complete the flow and review generated tests
@@ -165,8 +165,9 @@ Expected: Error message displayed, user remains on login page
 ---
 
 ### Post Test Case to GitHub
-- [ ] Find any test case card in your Test Scrolls subtab
-- [ ] Click on the test case to **view it in detail**
+- [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
+- [ ] Choose any test case in your Test Scrolls subtab
+- [ ] Click **view** on the test case
 - [ ] In the test case viewer, look for **"Post to GitHub"** button
 - [ ] Click it and paste a PR/Issue URL to post to
 - [ ] Go to GitHub and verify the test case appears as a comment
