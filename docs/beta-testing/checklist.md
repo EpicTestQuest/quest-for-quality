@@ -74,7 +74,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ### Create a Product
 - [ ] Go to Home Tab → 💎 Products tab → Products subtab
-- [ ] Click **"Add Product"** button
+- [ ] Click **"Conjure Product"** button
 - [ ] Fill in the fields
 - [ ] Save and verify it appears in your products list
 
@@ -82,8 +82,8 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ### Create a Feature
 - [ ] Go to Home Tab → 💎 Products tab → Features subtab
-- [ ] Click **"Add Feature"** button
-- [ ] Select a product from dropdown (use one of the existing: Uber, Airbnb, Amazon, Chase, or Stripe)
+- [ ] Click **"Conjure New Feature"** button
+- [ ] Select a product from dropdown
 - [ ] Fill in the fields
 - [ ] Save and verify it appears in features list
 
@@ -91,10 +91,9 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 
 ### Create a Persona
 - [ ] Go to Home Tab → 💎 Products tab → Personas subtab
-- [ ] Click **"Add Persona"** button
-- [ ] Click **"Browse Templates"** button to see persona suggestions
-- [ ] Review the 5 suggested persona templates
-- [ ] Either select one or create your own
+- [ ] Click **"Create Persona"** button and create persona
+...**OR**
+- [ ] Click **"Browse Templates"** button and create persona from that
 - [ ] Save and verify it appears in personas list
 
 ---
@@ -107,7 +106,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] In the DM conversation, describe what you want to test
 - [ ] Review the generated test cases
 
-**What to test:** "Help me test the Uber ride booking flow"
+**Example prompt:** "Help me test the Uber ride booking flow"
 
 ---
 
@@ -119,7 +118,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 - [ ] Select **at least 2 focus areas**
 - [ ] Click "Forge Test Scrolls" and wait for DM with results
 
-**What to test:** "Test the payment processing for edge cases like network failures"
+**Example prompt:** "Test the payment processing for edge cases like network failures"
 
 ---
 
