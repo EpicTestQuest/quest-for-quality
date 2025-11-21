@@ -156,17 +156,11 @@ Expected: Error message displayed, user remains on login page
 ### Generate a Test Case from One PR Type
 - [ ] Click **"New Chat"** button to start conversational flow
 - [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
-- [ ] Paste your chosen GitHub PR or Issue URL in the requirement step
-- [ ] 1. **Large PR (complex):** Example PR #56 (Airbnb - 287 files changed)
-  - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`
-  - Verify Wizzo extracts acceptance criteria from the massive PR description
-- [ ] 2. **Feature PR (standard):** Example PR #55 (Uber - surge pricing)
-  - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/55`
-  - Verify enrichment works for Uber product
-- [ ] 3. **Security PR:** Example PR #54 (Stripe - PCI compliance)
-  - URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/54`
+- [ ] Paste your chosen GitHub PR URL or Issue URL in the requirement step
+  - e.g. URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`,`https://github.com/EpicTestQuest/quest-for-quality/pull/55`
 - [ ] Complete the flow and review generated tests
 - [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
+  - Verify Wizzo extracts acceptance criteria from the massive PR description
 
 ---
 
