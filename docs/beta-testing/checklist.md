@@ -137,11 +137,7 @@ We've created a **personal GitHub Discussion** for each tester to track progress
 ### Method 3: Create with Image Upload
 - [ ] Click **"New Chat"** button to start conversational flow
 - [ ] Upload a screenshot/image (PNG or JPG) in the DM
-  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots) with examples for:
-    - **Uber**: `uber-signup.png` (registration), `uber-help-errors.png` (payment errors)
-    - **Airbnb**: `airbnb-login.png` (login), `airbnb-signup.png` (registration), `airbnb-help-errors.png` (booking errors)
-    - **Amazon**: `amazon-signin.png` (login), `amazon-register.png` (registration), `amazon-help-errors.png` (payment declined), `amazon-cart-error.png` (cart errors)
-    - **Stripe**: `stripe-login.png` (dashboard login)
+  - **Ready-to-use screenshots:** Browse [/screenshots folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
   - **Alternatively:** Take your own screenshot of any login, signup, or error page
 - [ ] Review how Wizzo uses the image context in test cases
 
