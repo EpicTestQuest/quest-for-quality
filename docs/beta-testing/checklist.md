@@ -38,34 +38,37 @@ To make your beta testing experience as realistic as possible, we've created a c
 
 ## How to Report Your Findings
 
-We've created a **personal GitHub Discussion** for each tester to track progress and report findings!
+We've created a **personal GitHub Discussion** for each tester!
 
-### Three Ways to Comment
+### Track Your Progress
+✅ Use the checkboxes in this checklist (click to check them off as you complete each item)
 
-**1️⃣ Quick Progress Updates** (after completing sections)
-```
-✅ Part 2 done! Methods 1-3 worked great, Method 4 had a bug (see below)
-```
+### Report Issues
+Only comment in your discussion thread when you need to report something:
 
-**2️⃣ Detailed Bug Reports** (when you find issues)
+**❌ Found a bug?**
 ```
-❌ Bug - Method 4 GitHub Integration
+Bug - Part 3 GitHub Integration
 - Pasted PR #55, preview showed, but "Generate Tests" button missing
 - Screenshot: [link]
 ```
 
-**3️⃣ Suggestions & Questions** (anytime)
+**💡 Have a suggestion?**
 ```
-💡 The focus areas dropdown could use helper text - wasn't sure how many to pick
+The focus areas dropdown could use helper text - wasn't sure how many to pick
+```
+
+**🎉 Optional: Quick completion updates**
+```
+Part 2 done! All 4 methods worked great!
 ```
 
 ### Your Discussion Thread:
 1. Go to [GitHub Discussions](https://github.com/EpicTestQuest/quest-for-quality/discussions)
 2. Find **"Beta Testing Report - [Your Name]"**
-3. Click **"Comment"** at the bottom
-4. Use the examples above as inspiration!
+3. Comment when you find bugs or have suggestions!
 
-**Note:** You can comment as many times as you want - one per section, one per bug, or save it all for one big update at the end!
+**Pro Tip:** Comment as many times as you want - one per issue or save them all for one update. Whatever works for you!
 
 ---
 ## Ready? Let's Go!

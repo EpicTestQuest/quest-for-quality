@@ -1,0 +1,239 @@
+title: "Beta Testing Report - [Your Name]"
+labels:
+  - beta-testing
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🎉 Welcome to Wizzo Beta Testing!
+
+        Thank you for participating in the Wizzo beta program! Use this discussion to track your progress through the [Beta Testing Checklist](https://github.com/EpicTestQuest/quest-for-quality/blob/main/docs/beta-testing/checklist.md).
+
+        **Estimated time:** 30-45 minutes
+
+        ---
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 How to Use This Thread
+
+        You can comment as many times as you want! Here are three ways to report:
+
+        **1️⃣ Quick Progress Updates** (after completing sections)
+        ```
+        ✅ Part 2 done! Methods 1-3 worked great, Method 4 had a bug (see below)
+        ```
+
+        **2️⃣ Detailed Bug Reports** (when you find issues)
+        ```
+        ❌ Bug - Method 4 GitHub Integration
+        - Pasted PR #55, preview showed, but "Generate Tests" button missing
+        - Screenshot: [link]
+        ```
+
+        **3️⃣ Suggestions & Questions** (anytime)
+        ```
+        💡 The focus areas dropdown could use helper text - wasn't sure how many to pick
+        ```
+
+        ---
+
+  - type: textarea
+    id: part1-products-features-personas
+    attributes:
+      label: "Part 1: Products, Features & Personas"
+      description: |
+        Create a Product, Feature, and Persona to get familiar with the basics.
+
+        **Tasks:**
+        - [ ] Create a product (Home Tab → Products → Conjure Product)
+        - [ ] Create a feature (Home Tab → Features → Conjure New Feature)
+        - [ ] Create a persona (Home Tab → Personas → Create Persona or Browse Templates)
+      placeholder: |
+        ✅ Completed Part 1!
+        - Created "Wheels in Fire" product
+        - Created "Payment Processing" feature
+        - Used persona template "Power User"
+
+        💡 Suggestion: Would be helpful to have example product descriptions
+    validations:
+      required: false
+
+  - type: textarea
+    id: part2-test-scrolls
+    attributes:
+      label: "Part 2: Test Scrolls - 4 Different Ways"
+      description: |
+        Try all four methods of creating test cases.
+
+        **Methods:**
+        - [ ] Method 1: Conversational Flow with Persona (click "New Chat")
+        - [ ] Method 2: Create with Image Upload (upload screenshot in chat)
+        - [ ] Method 3: Modal Flow (click "Forge Test Scrolls with Wizzo")
+        - [ ] Method 4: Craft Your Own (manual entry)
+      placeholder: |
+        ✅ Method 1: Worked perfectly! Generated 8 test cases for Uber booking
+        ✅ Method 2: Uploaded amazon-signin.png, Wizzo recognized login fields
+        ✅ Method 3: Modal flow smooth, selected 3 focus areas (security, accessibility, usability)
+        ❌ Method 4: Modal didn't open after selecting product (see bug report below)
+    validations:
+      required: false
+
+  - type: textarea
+    id: part3-github-integration
+    attributes:
+      label: "Part 3: GitHub Integration Testing"
+      description: |
+        Test GitHub PR/Issue integration for enrichment and posting.
+
+        **Tasks:**
+        - [ ] Generate test cases from a GitHub PR URL
+        - [ ] Post a test case to GitHub (view test case → "Post to GitHub")
+      placeholder: |
+        ✅ Generated from PR #56 (Airbnb calendar sync)
+        - Wizzo extracted acceptance criteria correctly
+        - Generated 6 test cases covering edge cases
+
+        ✅ Posted test case to PR #55 (Uber surge pricing)
+        - Comment appeared on GitHub immediately
+        - Formatting looked good!
+    validations:
+      required: false
+
+  - type: textarea
+    id: part4-jira-integration
+    attributes:
+      label: "Part 4: Jira Integration Testing"
+      description: |
+        Test Jira ticket integration (requires Jira OAuth connection).
+
+        **Tasks:**
+        - [ ] Generate test cases from Jira ticket URL
+        - [ ] Post test case to Jira (view test case → "Post to Jira")
+      placeholder: |
+        ✅ Generated from Jira ticket SCRUM-5 (Zelle transfer)
+        - Wizzo pulled in acceptance criteria from ticket
+        - Test cases matched user story requirements
+
+        ✅ Posted test case to SCRUM-10
+        - Comment posted successfully
+        - Formatting needs improvement (minor issue)
+    validations:
+      required: false
+
+  - type: textarea
+    id: part5-quality-parties
+    attributes:
+      label: "Part 5: Quality Parties"
+      description: |
+        Test collaborative brainstorming sessions.
+
+        **Tasks:**
+        - [ ] Start a Quality Party in a channel (type `/start-party`)
+        - [ ] Participate in someone else's party (reply with 2+ messages, mention @wizzo)
+        - [ ] End a Quality Party (click "End Party" button)
+      placeholder: |
+        ✅ Started party in #beta-testing
+        - Selected "Gap Analysis" goal
+        - Wizzo provided great initial insights
+
+        ✅ Participated in Jane's party
+        - Contributed 3 messages about edge cases
+        - @wizzo responded with helpful suggestions
+
+        ✅ Ended party after 6 messages
+        - Final analysis was comprehensive and useful
+    validations:
+      required: false
+
+  - type: textarea
+    id: part6-focus-break
+    attributes:
+      label: "Part 6: Focus Break"
+      description: |
+        Test the gamification feature.
+
+        **Tasks:**
+        - [ ] Play a Focus Break game for 1-2 minutes (Home Tab → Focus Break)
+      placeholder: |
+        ✅ Played Number Memory game
+        - Game loaded quickly
+        - Controls worked smoothly
+        - Fun little break!
+    validations:
+      required: false
+
+  - type: textarea
+    id: bugs-found
+    attributes:
+      label: "🐛 Bugs Found"
+      description: |
+        Report any bugs you encountered (even if they're in "Known Issues").
+        Include steps to reproduce, expected vs actual behavior, and screenshots if possible.
+      placeholder: |
+        ❌ Bug #1: "Craft Your Own" modal doesn't open
+        - Steps: Home Tab → Test Scrolls → Craft Your Own → Select product → Click next
+        - Expected: Modal opens with test case form
+        - Actual: Nothing happens, modal doesn't appear
+        - Screenshot: [link]
+
+        ❌ Bug #2: First message not processed in chat
+        - Steps: Click "New Chat" → Type message → Hit enter
+        - Expected: Wizzo processes message
+        - Actual: Message ignored, Wizzo asks for requirements again
+        - Workaround: Copy/paste original message works
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: "💡 Suggestions & Feedback"
+      description: What did you love? What could be better?
+      placeholder: |
+        ❤️ What I loved:
+        - Image upload feature is magical! Instant test generation from screenshots
+        - Quality Parties feel collaborative and fun
+        - GitHub integration saves so much time
+
+        💡 Suggestions:
+        - Add tooltips for focus areas to explain what each one does
+        - Show example prompts in conversational flow
+        - Add "copy to clipboard" button for test cases
+    validations:
+      required: false
+
+  - type: textarea
+    id: overall-experience
+    attributes:
+      label: "⭐ Overall Experience"
+      description: |
+        How was your overall experience? Would you recommend Wizzo to colleagues?
+        Rate on a scale of 1-10 and tell us why!
+      placeholder: |
+        Rating: 9/10
+
+        Overall, Wizzo exceeded my expectations! The AI-generated test cases were surprisingly comprehensive and the GitHub integration is a game-changer for my workflow. The conversational interface makes test generation feel natural and intuitive.
+
+        Minor issues aside (which I'm sure will be fixed), I'd absolutely recommend this to my QA team. This could save us hours every sprint.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## 🎉 Thank You!
+
+        Your feedback is invaluable! After completing testing, feel free to:
+        - Ask questions in the **#beta-testing** Slack channel
+        - Comment on this discussion anytime with updates
+        - Check for responses from the Wizzo team
+
+        **Resources:**
+        - [Beta Testing Checklist](https://github.com/EpicTestQuest/quest-for-quality/blob/main/docs/beta-testing/checklist.md)
+        - [GitHub Test Repo](https://github.com/EpicTestQuest/quest-for-quality)
+        - [Jira Board](https://epictestquest.atlassian.net/jira/software/projects/SCRUM/list)
+        - [Screenshots Folder](https://github.com/EpicTestQuest/quest-for-quality/tree/main/screenshots)
