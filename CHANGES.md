@@ -1,0 +1,1 @@
+## Feature: Verified Purchase Badge\n\n### Changed Files:\n- src/components/ReviewCard.jsx\n- src/assets/icons/verified.svg (NEW)\n- src/styles/reviews.css\n\n### Changes:\nAdded visual indicator for verified purchases
