@@ -1,0 +1,1 @@
+## Fix: Messaging Performance During Peak Hours\n\n### Changed Files:\n- src/api/messages/queue.js (NEW)\n- src/api/messages/send.js\n- src/database/queries/messages.sql\n\n### Changes:\nImplemented message queueing and batch processing
