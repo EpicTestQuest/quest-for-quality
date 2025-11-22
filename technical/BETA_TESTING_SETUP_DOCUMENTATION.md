@@ -1405,7 +1405,7 @@ done
 
 **Maintainer:** Christine Pinto (christine@epictestquest.com)
 **Created:** 2025-11-19
-**Last Updated:** 2025-11-19
+**Last Updated:** 2025-11-22
 
 For questions or issues with this setup, refer to this documentation or contact the maintainer.
 
@@ -1453,6 +1453,66 @@ for issue_json in "${issues[@]}"; do
   sleep 2
 done
 ```
+
+### Jira Ticket Assignment Script
+
+For distributing Jira tickets randomly across beta testers:
+
+**Script Location:** `wizzo_slackApp/scripts/assign-jira-tickets-v2.sh`
+
+**Purpose:** Randomly assigns all unassigned Jira tickets and moves "Finished" issues to "In Review" status.
+
+**Features:**
+- Fetches all assignable users from Jira project
+- Excludes specified users (project leads, admins)
+- Round-robin distribution for fair workload
+- Automatically transitions "Finished" → "In Review" status
+- Uses new Jira REST API v3 (`/search/jql` endpoint)
+- Rate limiting (0.5s between assignments)
+- macOS compatible (uses `sort -R` instead of `shuf`)
+
+**Usage:**
+```bash
+cd wizzo_slackApp/scripts
+chmod +x assign-jira-tickets-v2.sh
+bash assign-jira-tickets-v2.sh
+```
+
+**Configuration:**
+
+Edit the script to customize:
+- `EXCLUDED_IDS`: Account IDs to exclude from assignment
+- `PROJECT_KEY`: Jira project key (default: "SCRUM")
+- `JIRA_EMAIL` and `JIRA_TOKEN`: Authentication credentials
+
+**API Notes:**
+- Uses two-step fetch process: `/search/jql` for IDs, then `/issue/{id}` for details
+- Old `/rest/api/3/search` GET endpoint is deprecated as of 2024
+- Handles both unassigned tickets and status transitions in one run
+
+**Example Output:**
+```
+🎯 Jira Ticket Assignment Script (v2)
+======================================
+
+Step 1: Fetching project members...
+  ✓ Including: 19 users
+  ⊗ Excluding: Christine Pinto, Aaron Pinto
+
+Step 2: Fetching all issues from project...
+  Found 46 issues to assign
+
+Step 3: Randomly assigning tickets...
+  ✓ 46 issues assigned
+  ✓ 8 "Finished" issues moved to "In Review"
+
+✅ Assignment complete!
+```
+
+**When to use:**
+- Initial beta tester onboarding (first ticket distribution)
+- After creating new Jira stories (Phase 2/3)
+- When rebalancing workload across team
 
 ---
 
