@@ -173,19 +173,23 @@ Expected: Error message displayed, user remains on login page
 
 ## Part 3: GitHub Integration Testing
 
-### Generate a Test Case from One PR Type
+### Generate a Test Case from One PR Type or a Issue
 - [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
+    ..OR
+- [ ] **Choose one Issue from https://github.com/EpicTestQuest/quest-for-quality/issues**     
 - [ ] Click **"New Chat"** button to start conversational flow
 - [ ] Paste your chosen GitHub PR URL or Issue URL in the requirement step
-  - e.g. URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`,`https://github.com/EpicTestQuest/quest-for-quality/pull/55`
+  - e.g. URL: `https://github.com/EpicTestQuest/quest-for-quality/pull/56`,`https://github.com/EpicTestQuest/quest-for-quality/issues/9`
 - [ ] Complete the flow and review generated tests
-- [ ] Check that generated tests reference PR context (acceptance criteria, technical details)
+- [ ] Check that generated tests reference PR or Issue context (acceptance criteria, technical details)
   - Verify Wizzo extracts acceptance criteria from the massive PR description
 
 ---
 
 ### Post Test Case to GitHub
 - [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
+    ..OR
+- [ ] **Choose one Issue from https://github.com/EpicTestQuest/quest-for-quality/issues**   
 - [ ] Choose any test case in your Test Scrolls subtab
 - [ ] Click **view** on the test case
 - [ ] In the test case viewer, look for **"Post to GitHub"** button
