@@ -60,9 +60,6 @@ To make your beta testing experience as realistic as possible, we've created a c
 
 We've created a **personal GitHub Discussion** for each tester!
 
-### Track Your Progress
-✅ Use the checkboxes in this checklist (click to check them off as you complete each item)
-
 ### Report Issues
 Only comment in your discussion thread when you need to report something:
 
