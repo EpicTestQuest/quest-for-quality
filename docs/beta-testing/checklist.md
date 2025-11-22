@@ -249,8 +249,6 @@ Expected: Error message displayed, user remains on login page
 - [ ] Click the **"End Party"** button in the thread
 - [ ] Verify Wizzo posts a final party analysis with insights and outcomes
 
-**Note:** This may require async testing if you chose 24h+ duration
-
 ---
 
 ## Part 6: Focus Break
