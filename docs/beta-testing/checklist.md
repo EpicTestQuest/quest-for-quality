@@ -22,12 +22,12 @@ What we want to test is that the tool can **be used** to do the things it is sup
 - [Important Note About Test Data](#important-note-about-test-data)
 - [Resources](#resources)
 - [How to Report Your Findings](#how-to-report-your-findings)
-- [Part 1: Products, Features & Personas](#part-1-products-features--personas)
+- [Part 1: Products, Features & Personas](#part-1-products-features--personas) (optional)
 - [Part 2: Test Scrolls - 4 Different Ways](#part-2-test-scrolls---4-different-ways)
-- [Part 3: GitHub Integration Testing](#part-3-github-integration-testing)
-- [Part 4: Jira Integration Testing](#part-4-jira-integration-testing)
+- [Part 3: GitHub Integration Testing](#part-3-github-integration-testing) (optional)
+- [Part 4: Jira Integration Testing](#part-4-jira-integration-testing) (optional)
 - [Part 5: Quality Parties](#part-5-quality-parties)
-- [Part 6: Focus Break](#part-6-focus-break)
+- [Part 6: Focus Break](#part-6-focus-break) (optional)
 - [Testing Complete! 🎉](#testing-complete-)
 - [Common Issues to Watch For](#common-issues-to-watch-for)
 
@@ -89,8 +89,9 @@ Part 2 done! All 4 methods worked great!
 
 ---
 ## Ready? Let's Go!
----
-## Part 1: Products, Features & Personas
+We've made Parts 1, 3, 4, and 6 optional so you can focus on the core features: Test Scrolls (Part 2) and Quality Parties (Part 5). While we'd appreciate you exploring the other parts as well, prioritizing these two will give us the most critical feedback on our AI and server performance.
+
+## Part 1: Products, Features & Personas (optional)
 
 ### Create a Product
 - [ ] Go to Home Tab → 💎 Products tab → Products subtab
@@ -171,7 +172,7 @@ Expected: Error message displayed, user remains on login page
 
 ---
 
-## Part 3: GitHub Integration Testing
+## Part 3: GitHub Integration Testing (optional)
 
 ### Generate a Test Case from One PR Type or a Issue
 - [ ] **Choose one PR from https://github.com/EpicTestQuest/quest-for-quality/pulls**
@@ -198,7 +199,7 @@ Expected: Error message displayed, user remains on login page
 
 ---
 
-## Part 4: Jira Integration Testing
+## Part 4: Jira Integration Testing (optional)
 
 **Prerequisites:** You must have connected Jira OAuth (one-time setup)
 
@@ -251,7 +252,7 @@ Expected: Error message displayed, user remains on login page
 
 ---
 
-## Part 6: Focus Break
+## Part 6: Focus Break (optional)
 - [ ] Go to Home Tab → 🧠 Focus Break tab
 - [ ] Play for 1-2 minutes any of the games
 - [ ] Verify the game works smoothly
