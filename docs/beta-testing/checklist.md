@@ -235,7 +235,7 @@ Expected: Error message displayed, user remains on login page
 ---
 
 ### Participate in Someone Else's Quality Party
-- [ ] Find an active Quality Party thread in the channel
+- [ ] Find an active Quality Party thread in the channel which you didn't initiate
 - [ ] Reply in the thread with **at least 2 meaningful messages**
   - Share ideas, ask questions, or contribute scenarios
   - Example 1: "What about edge cases like network disconnection during ride?"
@@ -246,7 +246,7 @@ Expected: Error message displayed, user remains on login page
 ---
 
 ### End a Quality Party
-- [ ] Find a Quality Party thread with **at least 4 user messages** from participants (not counting Wizzo)
+- [ ] Find a Quality Party thread which you didn't initiate and with **at least 4 user messages** from participants (not counting Wizzo)
 - [ ] Click the **"End Party"** button in the thread
 - [ ] Verify Wizzo posts a final party analysis with insights and outcomes
 
