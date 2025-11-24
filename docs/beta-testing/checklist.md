@@ -210,7 +210,7 @@ Expected: Error message displayed, user remains on login page
   - `https://epictestquest.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog`
 - [ ] Check that test cases include Jira acceptance criteria
 
-**Note:** If you don't see the Jira URL field, you may need to connect Jira first (Home Tab → Wizzo's Workshop → "Connect to Jira")
+**Note:** If you don't see the Jira URL field, you may need to connect Jira first (Home Tab → Wizzo's Workshop → Integration tab → "Connect to Jira")
 
 ---
 
@@ -253,8 +253,8 @@ Expected: Error message displayed, user remains on login page
 ---
 
 ## Part 6: Focus Break (optional)
-- [ ] Go to Home Tab → 🧠 Focus Break tab
-- [ ] Play for 1-2 minutes any of the games
+- [ ] Go to Home Tab → Wizzo's Workshop → Focus Break tab
+- [ ] Play for 1-2 minutes any of the games (Wordle or 2048)
 - [ ] Verify the game works smoothly
 
 ---
