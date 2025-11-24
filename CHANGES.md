@@ -1,0 +1,1 @@
+## Feature: Apple Pay Integration\n\n### Changed Files:\n- src/components/payments/ApplePayButton.jsx (NEW)\n- src/api/payments/stripe.js\n- src/utils/paymentMethods.js\n\n### Changes:\nAdded Apple Pay payment method support
