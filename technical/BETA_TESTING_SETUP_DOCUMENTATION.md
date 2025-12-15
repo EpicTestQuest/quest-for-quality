@@ -2,7 +2,7 @@
 
 **Created:** 2025-11-19
 **Repository:** https://github.com/EpicTestQuest/quest-for-quality
-**Purpose:** Documentation for setting up realistic beta testing environment for Wizzo AI
+**Purpose:** Documentation for setting up realistic beta testing environment for Wizzo
 
 ---
 
@@ -19,7 +19,7 @@
 
 ## Overview
 
-This document captures the complete process of setting up a realistic beta testing environment with 25 GitHub Issues and 31 Pull Requests across 5 products and 16 features, designed to showcase Wizzo AI's capabilities across different documentation scenarios.
+This document captures the complete process of setting up a realistic beta testing environment with 25 GitHub Issues and 31 Pull Requests across 5 products and 16 features, designed to showcase Wizzo's capabilities across different documentation scenarios.
 
 ### Goals Achieved
 ✅ Create diverse testing scenarios (minimal, moderate, verbose PRs)
