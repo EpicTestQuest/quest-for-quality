@@ -767,7 +767,8 @@ DataDog metrics, Sentry errors, Analytics events
 - `jira-linked` - 3 Issues have this
 - `accessibility` - Accessibility improvements
 - `performance` - Performance optimization
-
+...
+```
 ---
 
 ## Lessons Learned
