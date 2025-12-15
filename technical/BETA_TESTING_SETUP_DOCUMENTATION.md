@@ -1366,7 +1366,7 @@ done
 **Supabase Project:** Wizzo Slack App Database
 **Jira Project:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM
 
-**Maintainer:** Christine Pinto (your-email@domain.com)
+**Maintainer:** Christine Pinto (christine@epictestquest.com)
 **Created:** 2025-11-19
 **Last Updated:** 2025-11-22
 
