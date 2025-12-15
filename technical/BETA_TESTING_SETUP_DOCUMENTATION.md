@@ -385,7 +385,7 @@ curl -X PATCH https://api.github.com/repos/ORG/REPO/issues/26 \
 ```bash
 # Search Jira issues
 curl -X POST \
-  -u "christine@epictestquest.com:$JIRA_TOKEN" \
+  -u "your-email@domain.com:$JIRA_TOKEN" \
   -H "Content-Type: application/json" \
   --data '{"jql": "project = SCRUM ORDER BY created DESC", "maxResults": 50}' \
   "https://epictestquest.atlassian.net/rest/api/3/search/jql"
@@ -414,35 +414,35 @@ curl -u "email:token" \
 -- Create features for all 3 teams at once
 INSERT INTO features (product_id, team_id, name, description, created_by)
 VALUES
-  -- Team 1 (T07UXE73LRG)
-  ('product_id_1', 'T07UXE73LRG', 'Driver & Rider Safety', '...', 'U07UQRW7M8W'),
-  ('product_id_1', 'T07UXE73LRG', 'Ride Booking Flow', '...', 'U07UQRW7M8W'),
+  -- Team 1 (TEAM_ID_1)
+  ('product_id_1', 'TEAM_ID_1', 'Driver & Rider Safety', '...', 'USER_ID_1'),
+  ('product_id_1', 'TEAM_ID_1', 'Ride Booking Flow', '...', 'USER_ID_1'),
 
-  -- Team 2 (T08UZJCNNCT)
-  ('product_id_2', 'T08UZJCNNCT', 'Driver & Rider Safety', '...', 'U08UZJCQDPV'),
-  ('product_id_2', 'T08UZJCNNCT', 'Ride Booking Flow', '...', 'U08UZJCQDPV'),
+  -- Team 2 (TEAM_ID_2)
+  ('product_id_2', 'TEAM_ID_2', 'Driver & Rider Safety', '...', 'USER_ID_2'),
+  ('product_id_2', 'TEAM_ID_2', 'Ride Booking Flow', '...', 'USER_ID_2'),
 
-  -- Team 3 (T09NRRJ8AER)
-  ('product_id_3', 'T09NRRJ8AER', 'Driver & Rider Safety', '...', 'U09PPJG4A1E'),
-  ('product_id_3', 'T09NRRJ8AER', 'Ride Booking Flow', '...', 'U09PPJG4A1E');
+  -- Team 3 (TEAM_ID_3)
+  ('product_id_3', 'TEAM_ID_3', 'Driver & Rider Safety', '...', 'USER_ID_3'),
+  ('product_id_3', 'TEAM_ID_3', 'Ride Booking Flow', '...', 'USER_ID_3');
 ```
 
 **Key Mappings:**
 ```javascript
 const teamMappings = {
-  'T07UXE73LRG': {
+  'TEAM_ID_1': {
     name: 'Wizzo Test',
-    userId: 'U07UQRW7M8W',
+    userId: 'USER_ID_1',
     products: { uber: 'uuid1', airbnb: 'uuid2', ... }
   },
-  'T08UZJCNNCT': {
+  'TEAM_ID_2': {
     name: 'Wizzo Development',
-    userId: 'U08UZJCQDPV',
+    userId: 'USER_ID_2',
     products: { uber: 'uuid4', airbnb: 'uuid5', ... }
   },
-  'T09NRRJ8AER': {
+  'TEAM_ID_3': {
     name: 'Wizzo Sandbox',
-    userId: 'U09PPJG4A1E',
+    userId: 'USER_ID_3',
     products: { uber: 'uuid7', airbnb: 'uuid8', ... }
   }
 };
@@ -870,43 +870,6 @@ echo "$body" | jq -Rs . | curl ... -d @-
 
 **Lesson:** Use Python for complex JSON, bash for simple strings.
 
----
-
-### 5. User Attribution Across Teams
-
-**Problem:** Features showed "Unknown" creator in UI because wrong user_id used.
-
-**Discovery:** Each Slack team (workspace) has different user_id for same person.
-
-**Solution:** Query products table to find Christine's user_id per team, then update user_profiles display_name.
-
-```sql
--- Find user_ids
-SELECT team_id, created_by
-FROM products
-WHERE created_by IS NOT NULL
-GROUP BY team_id, created_by;
-
--- Results
--- T07UXE73LRG: U07UQRW7M8W
--- T08UZJCNNCT: U08UZJCQDPV
--- T09NRRJ8AER: U09PPJG4A1E
-
--- Update display names
-UPDATE user_profiles
-SET display_name = 'Christine'
-WHERE (team_id = 'T07UXE73LRG' AND user_id = 'U07UQRW7M8W')
-   OR (team_id = 'T08UZJCNNCT' AND user_id = 'U08UZJCQDPV')
-   OR (team_id = 'T09NRRJ8AER' AND user_id = 'U09PPJG4A1E');
-```
-
-**Lesson:** In multi-tenant systems, always map user IDs per tenant, never assume global IDs.
-
----
-
-### 6. Branch Naming Conventions
-
-**Good Patterns:**
 - `fix/product-brief-description` - Bug fixes
 - `feature/product-brief-description` - New features
 - `hotfix/product-brief-description` - Urgent production fixes
@@ -923,7 +886,7 @@ WHERE (team_id = 'T07UXE73LRG' AND user_id = 'U07UQRW7M8W')
 
 ---
 
-### 7. Realistic vs Overwhelming Detail
+### 6. Realistic vs Overwhelming Detail
 
 **Initial Approach:** First verbose PR had 8,000+ words (too much even for "verbose").
 
@@ -940,7 +903,7 @@ WHERE (team_id = 'T07UXE73LRG' AND user_id = 'U07UQRW7M8W')
 
 ---
 
-### 8. Feature vs Product Area Naming
+### 7. Feature vs Product Area Naming
 
 **Challenge:** Distinguishing broad "areas" from specific "features".
 
@@ -956,7 +919,7 @@ WHERE (team_id = 'T07UXE73LRG' AND user_id = 'U07UQRW7M8W')
 
 ---
 
-### 9. Git Operations in Loops
+### 8. Git Operations in Loops
 
 **Problem:** Git state corruption when creating branches in rapid succession without cleanup.
 
@@ -1162,11 +1125,11 @@ If expanding to more products:
 -- Add new products (repeat for all 3 teams)
 INSERT INTO products (team_id, name, type, industry, description, created_by)
 VALUES
-  ('T09NRRJ8AER', 'Netflix', 'web_app', 'Entertainment', 'Streaming service', 'U09PPJG4A1E'),
-  ('T09NRRJ8AER', 'Spotify', 'mobile_app', 'Entertainment', 'Music streaming', 'U09PPJG4A1E');
+  ('TEAM_ID_3', 'Netflix', 'web_app', 'Entertainment', 'Streaming service', 'USER_ID_3'),
+  ('TEAM_ID_3', 'Spotify', 'mobile_app', 'Entertainment', 'Music streaming', 'USER_ID_3');
 
 -- Get product IDs
-SELECT id, name FROM products WHERE team_id = 'T09NRRJ8AER' AND name IN ('Netflix', 'Spotify');
+SELECT id, name FROM products WHERE team_id = 'TEAM_ID_3' AND name IN ('Netflix', 'Spotify');
 ```
 
 #### Step 2: Create Features
@@ -1175,15 +1138,15 @@ SELECT id, name FROM products WHERE team_id = 'T09NRRJ8AER' AND name IN ('Netfli
 -- Netflix features
 INSERT INTO features (product_id, team_id, name, description, created_by)
 VALUES
-  ('netflix_uuid', 'T09NRRJ8AER', 'Content Discovery', 'Recommendation engine...', 'U09PPJG4A1E'),
-  ('netflix_uuid', 'T09NRRJ8AER', 'Profile Management', 'Multi-user profiles...', 'U09PPJG4A1E'),
-  ('netflix_uuid', 'T09NRRJ8AER', 'Video Playback', 'Adaptive streaming...', 'U09PPJG4A1E');
+  ('netflix_uuid', 'TEAM_ID_3', 'Content Discovery', 'Recommendation engine...', 'USER_ID_3'),
+  ('netflix_uuid', 'TEAM_ID_3', 'Profile Management', 'Multi-user profiles...', 'USER_ID_3'),
+  ('netflix_uuid', 'TEAM_ID_3', 'Video Playback', 'Adaptive streaming...', 'USER_ID_3');
 
 -- Spotify features
 INSERT INTO features (product_id, team_id, name, description, created_by)
 VALUES
-  ('spotify_uuid', 'T09NRRJ8AER', 'Playlist Creation', 'Custom playlists...', 'U09PPJG4A1E'),
-  ('spotify_uuid', 'T09NRRJ8AER', 'Social Sharing', 'Share music...', 'U09PPJG4A1E');
+  ('spotify_uuid', 'TEAM_ID_3', 'Playlist Creation', 'Custom playlists...', 'USER_ID_3'),
+  ('spotify_uuid', 'TEAM_ID_3', 'Social Sharing', 'Share music...', 'USER_ID_3');
 ```
 
 #### Step 3: Create GitHub Issues/PRs
@@ -1403,7 +1366,7 @@ done
 **Supabase Project:** Wizzo Slack App Database
 **Jira Project:** https://epictestquest.atlassian.net/jira/software/projects/SCRUM
 
-**Maintainer:** Christine Pinto (christine@epictestquest.com)
+**Maintainer:** Christine Pinto (your-email@domain.com)
 **Created:** 2025-11-19
 **Last Updated:** 2025-11-22
 
@@ -1452,68 +1415,6 @@ for issue_json in "${issues[@]}"; do
     -d "$issue_json"
   sleep 2
 done
-```
-
-### Jira Ticket Assignment Script
-
-For distributing Jira tickets randomly across beta testers:
-
-**Script Location:** `wizzo_slackApp/scripts/assign-jira-tickets-v2.sh`
-
-**Purpose:** Randomly assigns all unassigned Jira tickets and moves "Finished" issues to "In Review" status.
-
-**Features:**
-- Fetches all assignable users from Jira project
-- Excludes specified users (project leads, admins)
-- Round-robin distribution for fair workload
-- Automatically transitions "Finished" → "In Review" status
-- Uses new Jira REST API v3 (`/search/jql` endpoint)
-- Rate limiting (0.5s between assignments)
-- macOS compatible (uses `sort -R` instead of `shuf`)
-
-**Usage:**
-```bash
-cd wizzo_slackApp/scripts
-chmod +x assign-jira-tickets-v2.sh
-bash assign-jira-tickets-v2.sh
-```
-
-**Configuration:**
-
-Edit the script to customize:
-- `EXCLUDED_IDS`: Account IDs to exclude from assignment
-- `PROJECT_KEY`: Jira project key (default: "SCRUM")
-- `JIRA_EMAIL` and `JIRA_TOKEN`: Authentication credentials
-
-**API Notes:**
-- Uses two-step fetch process: `/search/jql` for IDs, then `/issue/{id}` for details
-- Old `/rest/api/3/search` GET endpoint is deprecated as of 2024
-- Handles both unassigned tickets and status transitions in one run
-
-**Example Output:**
-```
-🎯 Jira Ticket Assignment Script (v2)
-======================================
-
-Step 1: Fetching project members...
-  ✓ Including: 19 users
-  ⊗ Excluding: Christine Pinto, Aaron Pinto
-
-Step 2: Fetching all issues from project...
-  Found 46 issues to assign
-
-Step 3: Randomly assigning tickets...
-  ✓ 46 issues assigned
-  ✓ 8 "Finished" issues moved to "In Review"
-
-✅ Assignment complete!
-```
-
-**When to use:**
-- Initial beta tester onboarding (first ticket distribution)
-- After creating new Jira stories (Phase 2/3)
-- When rebalancing workload across team
-
 ---
 
 **End of Documentation**
