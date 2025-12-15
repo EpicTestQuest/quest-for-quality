@@ -1,8 +1,10 @@
 # Quest for Quality - Beta Testing Setup Documentation
 
 **Created:** 2025-11-19
+
 **Repository:** https://github.com/EpicTestQuest/quest-for-quality
-**Purpose:** Documentation for setting up realistic beta testing environment for Wizzo
+
+**Purpose:** Documentation for setting up realistic beta testing environment for [Wizzo](https://www.linkedin.com/company/epictestquest)
 
 ---
 
