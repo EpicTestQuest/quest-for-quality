@@ -888,7 +888,7 @@ echo "$body" | jq -Rs . | curl ... -d @-
 
 ---
 
-### 6. Realistic vs Overwhelming Detail
+### 5. Realistic vs Overwhelming Detail
 
 **Initial Approach:** First verbose PR had 8,000+ words (too much even for "verbose").
 
@@ -905,7 +905,7 @@ echo "$body" | jq -Rs . | curl ... -d @-
 
 ---
 
-### 7. Feature vs Product Area Naming
+### 6. Feature vs Product Area Naming
 
 **Challenge:** Distinguishing broad "areas" from specific "features".
 
@@ -921,7 +921,7 @@ echo "$body" | jq -Rs . | curl ... -d @-
 
 ---
 
-### 8. Git Operations in Loops
+### 7. Git Operations in Loops
 
 **Problem:** Git state corruption when creating branches in rapid succession without cleanup.
 
@@ -949,7 +949,7 @@ git checkout -b branch2  # Fails! Already on branch1
 
 ---
 
-### 10. Testing Incrementally
+### 8. Testing Incrementally
 
 **Mistake:** Wrote entire 31-PR script before testing.
 
