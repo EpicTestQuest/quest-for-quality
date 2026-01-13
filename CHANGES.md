@@ -1,0 +1,1 @@
+## Feature: Real-time Driver Location Updates\n\n### Changed Files:\n- src/services/locationTracking.js (NEW)\n- src/components/LiveMap.jsx\n- src/config/websockets.js\n\n### Changes:\nImplemented WebSocket-based live location tracking
