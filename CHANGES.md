@@ -1,0 +1,1 @@
+## Feature: Zelle Transfer Form Improvements\n\n### Changed Files:\n- src/components/ZelleTransferForm.jsx\n- src/api/zelle/recipients.js\n- src/utils/transferLimits.js\n\n### Changes:\nAdded recipient lookup and validation features
