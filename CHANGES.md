@@ -1,0 +1,1 @@
+## Feature: Biometric Authentication for Ride Confirmation\n\n### Changed Files:\n- src/providers/BiometricAuthProvider.js (NEW)\n- src/screens/RideConfirmation.jsx\n- src/utils/deviceCapabilities.js\n\n### Changes:\nImplemented Face ID/Touch ID support with PIN fallback
