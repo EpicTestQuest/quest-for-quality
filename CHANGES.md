@@ -1,0 +1,1 @@
+## Feature: Enhanced Check Photo Quality Detection\n\n### Changed Files:\n- src/components/CheckCapture.jsx\n- src/utils/imageQuality.js\n- src/ocr/qualityCheck.js\n\n### Changes:\nAdded lighting and blur detection with user feedback
