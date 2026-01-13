@@ -1,0 +1,1 @@
+## Feature: Improved Search Relevance\n\n### Changed Files:\n- src/search/algorithm.js\n- src/search/synonyms.json (NEW)\n- src/search/typoCorrection.js (NEW)\n\n### Changes:\nEnhanced search algorithm with synonym and typo support
